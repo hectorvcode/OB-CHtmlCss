@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia con HTML</title>
+</head>
+<body>
+    <h3>Imagenes</h3>
+    <!-- Buenas practicas: directorio para imagenes -->
+    <!-- Etiqueta imagen, sus dos atributos mas importantes src y alt -->
+    <img src="/03-Multimedia/imagenes/logohtml.webp" alt="logo HTML5" width="300" height="300">
+    <!-- Imagenes de fuentes externas -->
+    <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2019/06/20190628-DAMON-MOTORS-MOTO-EVITA-ACCIDENTES-01.jpg" alt="moto" width="300">
+    <h3>Videos</h3>
+    <!-- HTML5 soporta: webm, mp4, ogg -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs -->
+    <!-- autoplay para que el video se reproduzca automaticamente -->
+    <!-- loop para que el video se reproduzca de forma continua -->
+    <video width="300" controls muted loop>
+        <!-- source para declarar la fuente del video -->
+        <source src="/03-Multimedia/Intro.mp4" type="video/mp4" />
+    </video>
+    <h3>Audio</h3>
+    <!-- HTTP5 soporta: mp3, wav, ogg -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs -->
+    <!-- Usa los mismos atributos que video: autoplay, loop, controls -->
+    <audio controls loop>
+        <source src="/03-Multimedia/gnr-welcome.mp3" type="audio/mp3" />
+    </audio>
+</body>
+</html>
