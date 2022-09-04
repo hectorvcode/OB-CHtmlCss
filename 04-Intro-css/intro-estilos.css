@@ -1,0 +1,15 @@
+/*Estilos para colores*/
+.colores{
+    color: orangered;
+}
+/* Puedes usar coolors.co para generar paleta de colores con espacio */
+.color-hexadecimal{
+    color: #BCE784;
+}
+.color-rgb{
+    color: rgb(77, 14, 139);
+}
+/* Este define transparencia donde 1 define que no tiene transparencia */
+.color-rgba{
+    color: rgba(50, 15, 180, 0.5);
+}
