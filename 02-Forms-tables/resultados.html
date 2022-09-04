@@ -9,8 +9,10 @@
 <body>
     <h3>Estos son los resultados</h3>
     <div id="resultados"></div>
+    <!-- Enlace para volver al formulario -->
     <a href="/02-Forms-tables/formularios.html">Volver al formulario</a>
 </body>
+<!-- Muestra en pantalla la información capturada mediante formulario -->
 <script>
     const resDiv = document.getElementById("resultados")
     new URLSearchParams(window.location.search).forEach((val, name) => {

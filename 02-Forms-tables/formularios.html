@@ -12,18 +12,48 @@
     <!-- Metodo post para enviar información a un formulario -->
     <form action="resultados.html" method="get">
         <div>
+            <!-- Label para rotular -->
             <label for="nombreUsuario">Nombre de usuario</label>
-            <input type="text" id="nombreUsuario" name="nombreUsuario">
+            <!-- Input para que el usuario ingrese data -->
+            <input type="text" id="nombreUsuario" name="nombreUsuario" required/>
         </div>
+        <!-- Break line -->
+        <br>
         <div>
+            <label for="password">Contraseña</label>
+            <!-- Con el tipo password no se ve la contraseña mientras se escribe -->
+            <!-- Con required, el campo se debe diligenciar -->
+            <input type="password" id="password" name="password"/>
+        </div>
+        <br>
+        <div>
+            <label for="email">Cuál es tu email</label>
+            <input type="email" name="email" id="email" />
+        </div>
+        <br>
+        <div>
+            <label for="edad">Cuál es tu edad</label>
+            <!-- Min y max indican valores minimos y maximos que el formulario puede tomar -->
+            <!-- step indica que al seleccionar con flechas el salto será de 5 en 5 -->
+            <input type="number" name="edad" id="edad" min="0" max="200" step="5">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="nacimiento">Cuál es tu fecha de nacimiento</label>
+            <!-- Date implementa la funcionalidad de seleccion mediante calendario -->
+            <input type="date" name="nacimiento" id="nacimiento" />
+        </div>
+        <br>
+        <div>
+            <!-- Con el for se relaciona label con el input mediante name -->
             <label for="comentarios">Comentarios</label>
             <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
         </div>
-        <div>
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password">
-        </div>
-        <button>Enviar</button>
+        <br>
+        <!-- Mediante el type se agrega funcionalidad al botón, este resetea el formulario -->
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
