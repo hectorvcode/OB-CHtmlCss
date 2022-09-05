@@ -25,3 +25,27 @@
     background-image: url("/04-Intro-css/imagenes/Seamless-Polygon-Background.jpg");
     background-position: center center;
 }
+
+/* Tamaños */
+.ancho{
+    background-color: #BCE784;
+    width: 250px;
+}
+.alto{
+    background-color: aquamarine;
+    height: 200px;
+    width: 300px;
+}
+.tarjeta{
+    border-style: solid;
+    border-color: rgb(150,150,150);
+    border-width: 1px;
+    padding: 10px 20px 30px 40px;
+    margin: 10px 20px 30px 40px;
+    /* border-top: none; */
+}
+/*
+* Padding: es el espacio interno desde el borde hacia adentro
+* Border: linea
+* Margin: espacio externo que define la distancia entre elementos
+*/
