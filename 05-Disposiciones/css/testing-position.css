@@ -1,0 +1,22 @@
+.container {
+    width: 50%;
+    border: 3px solid black;
+    margin: 0 auto;
+    height: 1500px;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box-blue {
+    background-color: blue;
+    position: sticky;
+    top: 0;
+}
+
+.box-red {
+    background-color: red;
+}
