@@ -33,6 +33,9 @@ div{
     height: 700px;
     background-color: aqua;
 }
+
+/* Posicionamiento sticky - al hacer scroll modifica su posicionamiento */
+/* relative -> fixed */
 .sticky{
     position: sticky;
     background-color: salmon;
