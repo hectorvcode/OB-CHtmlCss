@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+    /* posiciona los elementos en relacion al eje principal */
+    justify-content: space-around;
+    /* redimensiona los elementos dependiendo del tamaño de pantalla */
+    flex-wrap: nowrap;
+    background-color: yellow;
+    height: 300px;
+}
+
+.contenido-1 {
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido-2 {
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido-3 {
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}
