@@ -5,14 +5,37 @@ div{
     background-color: white;
 }
 
-/* Posicionamiento relativo - se posiciona en relación al posicionamiento original */
+/*
+*Posicionamiento estático: es el valor por defecto para los elementos
+*El elemento se posiciona de acuerdo con el flujo normal del documento
+*Las propiedades left, right, top, bottom, z-index NO afectan a este tipo de posicionamiento
+*/
+
+.static{
+    left: 10px;
+    background-color: yellow;
+}
+
+/* 
+*Posicionamiento relativo - se posiciona en relación al posicionamiento original
+*Permanece en el flujo normal del documento
+*Las propiedades left, right, top, bottom, z-index SI afectan a este tipo de posicionamiento
+*/
+
 .relative{
     position: relative;
     left: 80px;
     margin-left: 10px;
 }
 
-/* Posicionamiento fijo - se posiciona en relación al viewport / pantalla */
+/* 
+*Posicionamiento fijo - se posiciona en relación al viewport / pantalla
+*Son similares a los elementos posicionados de forma absoluta
+*También son removidos del flujo normal del documento
+*Estos elementos son siempre posicionados de forma relativa al elemento html
+*Estos elementos no son afectados por scrolling, siempre se quedan en la misma posición de la pantalla
+*/
+
 .fixed {
     position: fixed;
     bottom: 0px;
@@ -21,7 +44,17 @@ div{
     z-index: 10;
 }
 
-/* Posicionamiento absoluto - se posiciona en función de su elemento padre*/
+/* 
+*Posicionamiento absoluto - se posiciona de forma relativa a su elemento padre
+*El elemento se elimina de su flujo normal del documento
+*Los demás elementos se comportan como si este no existiera
+*Las propiedades left, top, botton y right determinan su posición final
+*El elemento se posiciona en relación a su antecesor posicionado más cercano
+*Esto significa que el elemento padre debe tener un valor distinto a static
+*Si el elemento padre mas cercano no está posicionado, se posiciona en relación con el siguiente elemento padre posicionado
+*Si no hay ningún lemento antecesor posicionado, se posiciona en relación con el elemento html
+*/
+
 .absolute{
     position: absolute;
     bottom: 30px;
@@ -34,8 +67,13 @@ div{
     background-color: aqua;
 }
 
-/* Posicionamiento sticky - al hacer scroll modifica su posicionamiento */
-/* relative -> fixed */
+/* 
+*Posicionamiento sticky - al hacer scroll modifica su posicionamiento
+*Estos elementos son una mezcla de posición relativa y Fixed
+*Actuan como un elemento posicionado relativamente hasta un determinado punto de desplazamiento y luego actua como un elemento fijo
+*
+*/
+
 .sticky{
     position: sticky;
     background-color: salmon;
