@@ -1,0 +1,13 @@
+/* Anidación de selectores para ganar precisión en la aplicación de estilos */
+
+.p-contenedor {
+    color: greenyellow;
+}
+
+section.main .contenedor p {
+    color: green;
+}
+
+.contenedor #boton-contenedor {
+    background-color: yellow;
+}
