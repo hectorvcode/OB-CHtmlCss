@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases</title>
+    <style>
+        /* Una pseudo-clase se usa para definir un estado especial de un elemento */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .hover {
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+        }
+        .hover:hover {
+            background-color: burlywood;
+        }
+        .listado {
+            padding: 15px;
+            background-color: aquamarine;
+        }
+        .listado p:first-child {
+            color: white;
+        }
+        /* Color enlace sin visitar */
+        a:link {
+            color: deeppink;
+        }
+        /* Color enlace visitado */
+        a:visited {
+            color: crimson;
+        }
+        /* Color al pasar el mouse sobre el enlace */
+        a:hover {
+            color: pink;
+        }
+        /* Color al dar clic sobre el enlace */
+        a:active {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Nemo sed natus ut, tenetur odit rerum 
+            modi eius, quasi perspiciatis necessitatibus 
+            dolor est numquam temporibus dolores at quis 
+            vel! Laudantium, dignissimos!</p>
+    </div>
+    <div class="listado">
+        <p>parrafo 1</p>
+        <p>parrafo 2</p>
+        <p>parrafo 3</p>
+    </div>
+    <div class="enlaces">
+        <a href="https://google.com" target="_blank">Enlace a Google</a>
+        <a href="https://eltiempo.com" target="_blank">Enlace a Google</a>
+    </div>
+</body>
+</html>
