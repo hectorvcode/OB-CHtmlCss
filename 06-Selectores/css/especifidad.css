@@ -1,0 +1,18 @@
+/* Aumenta la especificidad */
+
+h1#h1-id\ h1-otroid.h1-clase {
+    color: blueviolet;
+} 
+
+.h1-clase {
+    color: yellow;
+}
+
+h1 {
+    /* Evitar el uso de !important en la medida de lo posible */
+    color: blue !important;
+}
+
+p {
+    color: red;
+}
