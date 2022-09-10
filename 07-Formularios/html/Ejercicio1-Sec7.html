@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1-Sec7</title>
+    <link rel="stylesheet" href="/07-Formularios/css/Ejercicio1-Sec7.css">
+</head>
+<body>
+    <!-- 
+        Replica el ejercicio del vídeo 3 de esta sesión y realiza el siguiente cambio:
+        Replícalo exactamente igual, pero realiza una nueva versión en modo oscuro
+        Los colores serán los siguientes
+            El rosa se queda igual
+            El fondo blanco será sustituido por el color #161717
+            El fondo de los inputs tendrá un color #212121
+            El fondo de los inputs cuando se hace hover será del color #454045
+            Los textos tendrán un color blanco
+    -->
+    <section class="container-main">
+        <div class="container-signup">
+            <h2>Sign up to Dribbble</h2>
+            <div class="btn-container">
+                <button class="btn-google">
+                    <div class="google-logo">
+                        <picture>
+                            <img class="google-l" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="Google logo">
+                        </picture>
+                    </div>
+                    <p class="google-text">Sign up with Google</p>
+                </button>
+                <button class="btn-twitter">
+                    <picture>
+                        <img class="twitter-l" src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-white-circle-png-images-23.png" alt="Twitter logo">
+                    </picture>
+                </button>
+            </div>
+        </div>
+        <div class="divider">
+            <hr>
+            <p>Or</p>
+            <hr>
+        </div>
+        <form action="" class="form">
+            <div class="name-set">
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="input username">
+                    <label for="username">Username</label>
+                    <input type="text" name="username">
+                </div>
+            </div>
+            <div class="input email-input">
+                <label for="email">Email</label>
+                <input type="text" name="email">
+            </div>
+            <div class="input password-input">
+                <label for="password">Password</label>
+                <input class="input-placeholder" type="password" name="password" placeholder="6+ characters">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox">
+                <p>Acepta Terminos Servicio y Politica Privacidad</p>
+            </div>
+            <button class="button-form">Create Account</button>
+        </form>
+    </section>
+</body>
+</html>
