@@ -1,0 +1,59 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.hijo {
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+    animation: traslacion 4s ease-in-out infinite forwards alternate;
+    /* Con all, la transición se aplica a todas las propiedades desde cero */
+    /* La partedel easy-in puede ser cubic-bezier(0.77,0.11,0.5,1.44) que puedes experimentar en la consola */
+    /* transition: transform 1s ease-in 0.5s; */
+}
+
+.padre:hover .hijo {
+    /* transform: translateX(100%);
+    background-color: rgb(160, 104, 212); */
+    animation-play-state: paused;
+}
+
+/* @keyframes traslacion {
+    0% {
+        background-color: beige;
+        transform: translate(0%);
+    }
+    50% {
+        background-color: red;
+        transform: translateX(10%) translateY(50%);
+    }
+    100%{
+        background-color: yellow;
+        transform: translate(100%);
+    }
+} */
+
+@keyframes traslacion {
+    0% {
+        background-color: white;
+        transform: translate(0%);
+    }
+    25% {
+        background-color: yellow;
+        transform: translate(100%);
+    }
+    50% {
+        background-color: aqua;
+        transform: translateY(100%) translateX(100%);
+    }
+    75% {
+        background-color: greenyellow;
+        transform: translateX(0%)  translateY(100%);
+    }
+    100% {
+        background-color: mediumspringgreen;
+        transform: translateX(0%) translateY(0%);
+    }
+}
