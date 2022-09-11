@@ -1,0 +1,23 @@
+.col-xs {
+    background-color: aqua;
+}
+
+.col-sm {
+    background-color: rgb(80, 241, 147);
+}
+
+.col-md {
+    background-color: rgb(186, 107, 238);
+}
+
+.col-lg {
+    background-color: rgb(226, 155, 214);
+}
+
+.col-xl {
+    background-color: rgb(109, 118, 250);
+}
+
+.col-xxl {
+    background-color: rgb(218, 163, 92);
+}
