@@ -50,6 +50,7 @@ $color-main: #0075ff;
         font-size: 0.75rem;
         list-style: none;
         display: inline;
+        margin-right: 1.5rem;
         a {
             color: #000000;
             text-decoration: none;
@@ -63,9 +64,9 @@ $color-main: #0075ff;
 .icon-sm {
 
     i {
-        font-size: 0.75rem;
+        font-size: 1.25rem;
         color: $color-main;
-        padding: 0.1rem 0.25rem;
+        padding: 0.4rem 0.65rem;
         border-radius: 50%;
         box-shadow: 0 0 10px #00000040;
     }
@@ -80,7 +81,6 @@ $color-main: #0075ff;
         text-align: center;
     }
     .description{
-        text-align: center;
         .title {
             font-size: 2rem;
         }
