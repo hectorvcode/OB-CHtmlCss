@@ -22,7 +22,7 @@ body {
 
 .container {
   width: 100%;
-  background-color: azure;
+  background-color: rgb(224, 178, 224);
   min-height: 100vh;
   padding: 0.5rem;
 }
@@ -55,4 +55,6 @@ p {
 }
 .listado ul li:hover {
   color: white;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
