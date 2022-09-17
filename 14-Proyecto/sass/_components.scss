@@ -14,7 +14,6 @@ $color-main: #0075ff;
     background-color: $color-main;
     color: white;
     @include btn-base();
-    border: none;
     border: solid 1px $color-main;
 
     &:hover {
