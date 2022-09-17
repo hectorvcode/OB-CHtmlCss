@@ -1,3 +1,20 @@
+.btn, .btn-2 {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  background-color: #35c997;
+  color: #535353;
+}
+.btn:hover, .btn-2:hover {
+  background-color: cyan;
+  color: red;
+  cursor: pointer;
+}
+
+.btn-2 {
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+
 body {
   margin: 0;
   padding: 0;
